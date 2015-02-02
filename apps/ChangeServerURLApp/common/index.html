@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+   	<head>
+   		<meta charset="UTF-8">
+   		<title>Change Server URL</title>
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+   		<!--
+    		<link rel="shortcut icon" href="images/favicon.png">
+    		<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    	-->
+   		<link rel="stylesheet" href="css/main.css">
+   		<script>window.$ = window.jQuery = WLJQ;</script>
+   	</head>
+   	<body style="display: none;">
+   		<div id="header">
+			<h1>Change Server URL</h1>
+		</div>
+   		
+		<div class="wrapper">
+		    <p>
+		        By default, this application will connect to the local MobileFirst Development Server.
+		        <br>
+		        Before setting a different server URL, make sure you have: set up a remote server and deployed the .wlapp file via its console.
+		    </p>
+		    
+		    <h3>Get Server URL</h3>
+		    <input type="button" id="getServerURL" class="appButton" value="Tap to get the server URL"/>
+		    
+		    <h3>Set Server URL</h3>
+		    <input type="text" id="serverURL" placeholder="protocol://host-or-ip:port/context-root"/><br/>
+		    <input type="button" id="setServerURL" class="appButton" value="Tap to set the server URL"/>
+		    <br>
+		    <input type="button" id="connectToServer" class="appButton" value="Connect to Server"/>
+		</div>
+   	
+   		<script src="js/initOptions.js"></script>
+   		<script src="js/main.js"></script>
+   		<script src="js/messages.js"></script>
+   	</body>
+</html>
